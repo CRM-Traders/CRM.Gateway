@@ -7,8 +7,22 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MaxMind.GeoIP2" Version="5.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Data\GeoLite2-City.mmdb">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\GeoLite2-Country.mmdb">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

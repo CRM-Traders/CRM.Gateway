@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<StartupOptions>(builder.Configuration.GetSection("Startup"));
 builder.Services.ConfigureRateLimiting(builder.Configuration);
+builder.Services.ConfigureGeoRouting(builder.Configuration);  
 builder.Services.ConfigureReverseProxy(builder.Configuration);
 builder.Services.ConfigureHealthChecks();
 builder.Services.ConfigureLogging();

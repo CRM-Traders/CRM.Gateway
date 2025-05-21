@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Options;
 using CRM.Gateway.Api.Configuration;
-using CRM.Gateway.Api.Middleware;
+using CRM.Gateway.Api.Features.Security.Middleware;
 
 namespace CRM.Gateway.Api.Extensions;
 

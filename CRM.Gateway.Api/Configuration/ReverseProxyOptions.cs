@@ -4,8 +4,8 @@ public class ReverseProxyOptions
 {
     public const string? SectionName = "ReverseProxy";
 
-    public Dictionary<string, RouteConfig>? Routes { get; set; } = new();
-    public Dictionary<string, ClusterConfig>? Clusters { get; set; } = new();
+    public Dictionary<string, RouteConfig> Routes { get; set; } = new();
+    public Dictionary<string, ClusterConfig> Clusters { get; set; } = new();
 }
 
 public abstract class RouteConfig
